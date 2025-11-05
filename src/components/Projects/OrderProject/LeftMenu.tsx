@@ -1,3 +1,4 @@
+import "./LeftMenu.css";
 import { useState } from "react";
 
 interface Props {
@@ -5,13 +6,13 @@ interface Props {
   heading: string;
   onSelectItem: (item: string) => void;
 }
-function ListGroup({ items, heading, onSelectItem }: Props) {
+function LeftMenu({ items, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   useState("");
 
   return (
-    <>
-      <h1>{heading}</h1>
+    <div>
+      <p className="paragraph">{heading}</p>
       {items.length === 0 && <p>No items found</p>}
       <ul className="list-group">
         {items.map((item, index) => (
@@ -31,8 +32,8 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
-export default ListGroup;
+export default LeftMenu;

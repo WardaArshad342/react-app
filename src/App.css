@@ -1,5 +1,6 @@
-body{
+html, body, #root {
     margin: 0;
     height: 100%;
+    padding: 0;
     background: linear-gradient(#F3F4F6);
 }
