@@ -1,6 +1,6 @@
 import { useState } from "react";
-import email_icon from "../../assets/email.png";
-import password_icon from "../../assets/password.png";
+import email_icon from "../../../assets/email.png";
+import password_icon from "../../../assets/password.png";
 import "./Login.css";
 
 interface LoginProps {
